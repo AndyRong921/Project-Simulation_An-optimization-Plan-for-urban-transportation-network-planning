@@ -25,20 +25,55 @@ The project's workflow is divided into four core tasks:
 <img width="1268" height="690" alt="image" src="https://github.com/user-attachments/assets/784f83e3-08b1-4d26-939d-306968f54438" />
 
 
+# 🗺️ Regulating the Traffic of Future: An Applicable Evaluation and Optimization Model for Baltimore 🚗
+
+This project presents a comprehensive evaluation and optimization model for the transportation system in Baltimore, USA. Leveraging graph theory, this study establishes a network model and proposes a specific model for the bus network to address challenges posed by the city's transportation infrastructure, particularly following the collapse of the Francis Scott Key Bridge.
+
+## 🛠️ Project Methodology
+
+The project's workflow is divided into four core tasks:
+
+### 1️⃣ Task 1: Data Preprocessing & Key Node Identification
+
+* **Objective:** 🎯 To filter and identify the most critical nodes within the transportation network from raw data to prepare for modeling.
+* **Method:**
+    1.  **Data Cleaning:** 🧹 Processed and cleaned an initial dataset of over 220,000 traffic nodes.
+    2.  **Metric Establishment:** 📏 Developed two key evaluation metrics:
+        * **Node Degree:** Represents the connectivity of a node.
+        * **Average Neighbor's Distance:** Represents the operational efficiency of a node.
+    3.  **Node Filtering:** 🔎 Applied a comprehensive formula to identify and select the 20 most important traffic nodes.
+
 ### 2️⃣ Task 2: Road Network Modeling (Bridge Collapse Impact)
 
 * **Objective:** 💥 To assess the impact of the Key Bridge collapse on Baltimore's road traffic network.
 * **Method:**
     1.  **Path Abstraction:** 🛣️ Used the K-means algorithm to cluster qualifying nodes into three groups, abstracting them into three key routes: Highway, Tunnel, and Bridge.
-<img width="1748" height="1238" alt="image" src="https://github.com/user-attachments/assets/b921019f-3529-4395-8afa-6234368b7ae5" />
-<img width="1756" height="1222" alt="image" src="https://github.com/user-attachments/assets/9522d157-7f25-42c2-83e2-5d0b40b2c0d9" />
+<table>
+  <tr>
+    <td align="center"><em>Fig 5: Surrounding Tunnels/Bridges</em></td>
+    <td align="center"><em>Fig 6: K-Means Cluster Analysis</em></td>
+  </tr>
+  <tr>
+    <td><img width="400" alt="The condition of a bridge or tunnel around a collapsed bridge" src="https://github.com/user-attachments/assets/9522d157-7f25-42c2-83e2-5d0b40b2c0d9" /></td>
+    <td><img width="400" alt="Cluster analysis of three types of nodes" src="https://github.com/user-attachments/assets/b921019f-3529-4395-8afa-6234368b7ae5" /></td>
+  </tr>
+</table>
+
     2.  **Network Modeling:** 📉 Built a foundational network model to evaluate annual average traffic flow and congestion levels.
-<img width="1000" height="800" alt="image" src="https://github.com/user-attachments/assets/5091b9a7-e3c8-44ff-9ba2-9f99998a66aa" />
-<img width="1514" height="1218" alt="image" src="https://github.com/user-attachments/assets/afc27de2-a2ee-4c0a-bd10-2d4ba80a5767" />
+<table>
+  <tr>
+    <td align="center"><em>Fig 4: All Nodes After Cleaning</em></td>
+    <td align="center"><em>Fig 7: Route Diagram for Modeling</em></td>
+  </tr>
+  <tr>
+    <td><img width="400" alt="Figure of all nodes after cleaning" src="https://github.com/user-attachments/assets/afc27de2-a2ee-4c0a-bd10-2d4ba80a5767" /></td>
+    <td><img width="400" alt="A line diagram with modeling implications related to the effects of bridge collapse" src="https://github.com/user-attachments/assets/5091b9a7-e3c8-44ff-9ba2-9f99998a66aa" /></td>
+  </tr>
+</table>
 
     3.  **Impact Analysis:** 📊 Compared traffic flow and congestion data before and after the bridge collapse. The results showed that the collapse reduced the bridge's traffic to zero, while traffic on the highway and tunnel routes increased significantly, with a corresponding rise in congestion.
-<img width="374" height="226" alt="image" src="https://github.com/user-attachments/assets/dc0a3af0-bc4c-4fd1-94ce-061a1e37c26e" />
-
+    
+<img width="374" alt="Table snippet showing traffic increase" src="https://github.com/user-attachments/assets/dc0a3af0-bc4c-4fd1-94ce-061a1e37c26e" />
 
 ### 3️⃣ Task 3: Bus System Evaluation Model
 
