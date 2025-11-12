@@ -101,7 +101,12 @@ Before and After Optimization</em>
 
 ## 📈 Key Models & Formulas
 ### Task 1: Road Traffic Flow Modeling
-<img width="343" height="135" alt="image" src="https://github.com/user-attachments/assets/4fca9b78-f281-4962-b1bb-3333b14ec26c" />
+</p>
+<p align="center">
+  <img width="343" height="135" alt="image" src="https://github.com/user-attachments/assets/4fca9b78-f281-4962-b1bb-3333b14ec26c" />
+  <br>
+  <em>Table 3: Metrics Before and After Optimization</em>
+</p>
 
 
 
