@@ -1,6 +1,9 @@
 # 🗺️ Regulating the Traffic of Future: An Applicable Evaluation and Optimization Model for Baltimore 🚗
 
 This project presents a comprehensive evaluation and optimization model for the transportation system in Baltimore, USA. Leveraging graph theory, this study establishes a network model and proposes a specific model for the bus network to address challenges posed by the city's transportation infrastructure, particularly following the collapse of the Francis Scott Key Bridge.
+<img width="4144" height="2761" alt="image" src="https://github.com/user-attachments/assets/c25f6e4f-bb7a-4941-b44b-3df5d3eb5283" />
+
+
 
 ## 🛠️ Project Methodology
 
@@ -41,7 +44,6 @@ The project's workflow is divided into four core tasks:
     <td><img width="400" alt="Cluster analysis of three types of nodes" src="https://github.com/user-attachments/assets/b921019f-3529-4395-8afa-6234368b7ae5" /></td>
   </tr>
 </table>
-
     2.  **Network Modeling:** 📉 Built a foundational network model to evaluate annual average traffic flow and congestion levels.
 <table>
   <tr>
@@ -53,7 +55,6 @@ The project's workflow is divided into four core tasks:
     <td><img width="400" alt="A line diagram with modeling implications related to the effects of bridge collapse" src="https://github.com/user-attachments/assets/5091b9a7-e3c8-44ff-9ba2-9f99998a66aa" /></td>
   </tr>
 </table>
-
     3.  **Impact Analysis:** 📊 Compared traffic flow and congestion data before and after the bridge collapse. The results showed that the collapse reduced the bridge's traffic to zero, while traffic on the highway and tunnel routes increased significantly, with a corresponding rise in congestion.
 <p align="center">
   <img width="500" alt="Table snippet showing traffic increase" src="https://github.com/user-attachments/assets/dc0a3af0-bc4c-4fd1-94ce-061a1e37c26e" />
@@ -95,14 +96,18 @@ The project's workflow is divided into four core tasks:
 ---
 
 ## 📈 Key Models & Formulas
+### Task 1: Road Traffic Flow Modeling
+<img width="343" height="135" alt="image" src="https://github.com/user-attachments/assets/4fca9b78-f281-4962-b1bb-3333b14ec26c" />
 
-### Task 2: Road Network Model
+
+
+### Task 2: Bus Traffic System Evaluation Modelling
 
 | Formula | Description |
 | :--- | :--- |
 | <img width="150" alt="Congestion Level Formula" src="https://github.com/user-attachments/assets/e2373004-3269-4459-ae4c-08ea985b4ebd" /> | **Congestion Level ($Y_{ij}$):** Measures the ratio of actual traffic flow ($d_{ij}$) to the maximum capacity ($SM_{ij}$). |
 
-### Task 3: Bus System Evaluation Model
+### Task 3: Bus network optimization model
 
 | Formula | Description |
 | :--- | :--- |
@@ -119,7 +124,7 @@ The project's workflow is divided into four core tasks:
 
 ---
 
-## S Contributors
+## Contributors
 
 * **A (Author):** Primarily responsible for modeling; assisted with programming (Matlab, R).
     * *Undergraduate in Mathematics and Applied Mathematics.*
