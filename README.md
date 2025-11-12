@@ -31,9 +31,9 @@ The project's workflow is divided into four core tasks:
     3.  **Node Filtering:** 🔎 Applied a comprehensive formula to identify and select the 20 most important traffic nodes.
 <table>
   <tr>
-    <td align="center"><em>Fig 1: Figure of all nodes after cleaning</em></td>
-    <td align="center"><em>Fig 2: The condition of a bridge or tunnel
+    <td align="center"><em>Fig 1: The condition of a bridge or tunnel
 around a collapsed bridge</em></td>
+    <td align="center"><em>Fig 2: Figure of all nodes after cleaning</em></td>
   </tr>
   <tr>
     <td><img width="400" alt="Flow chart of project work" src="https://github.com/user-attachments/assets/784f83e3-08b1-4d26-939d-306968f54438" /></td>
@@ -77,10 +77,10 @@ The project's workflow is divided into four core tasks:
     2.  **Network Modeling:** 📉 Built a foundational network model to evaluate annual average traffic flow and congestion levels.
 <table>
   <tr>
-    <td align="center"><em>Fig 5: Service Area Coverage (Radius
-= 200 meters)</em></td>
+    <td align="center"><em>Fig 5: Relation between reachability ω and
+radius r</em></td>
     <td align="center"><em>Fig 6: : Service Area Coverage (Radius
-= 500 meters)</em></td>
+= 200 meters)</em></td>
   </tr>
   <tr>
     <td><img width="400" alt="Figure of all nodes after cleaning" src="https://github.com/user-attachments/assets/afc27de2-a2ee-4c0a-bd10-2d4ba80a5767" /></td>
