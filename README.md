@@ -21,14 +21,24 @@ The project's workflow is divided into four core tasks:
         * **Node Degree:** Represents the connectivity of a node.
         * **Average Neighbor's Distance:** Represents the operational efficiency of a node.
     3.  **Node Filtering:** 🔎 Applied a comprehensive formula to identify and select the 20 most important traffic nodes.
+<img width="1000" height="801" alt="image" src="https://github.com/user-attachments/assets/e9175f95-65e6-4dd5-8f95-59b96e1597e5" />
+<img width="1268" height="690" alt="image" src="https://github.com/user-attachments/assets/784f83e3-08b1-4d26-939d-306968f54438" />
+
 
 ### 2️⃣ Task 2: Road Network Modeling (Bridge Collapse Impact)
 
 * **Objective:** 💥 To assess the impact of the Key Bridge collapse on Baltimore's road traffic network.
 * **Method:**
     1.  **Path Abstraction:** 🛣️ Used the K-means algorithm to cluster qualifying nodes into three groups, abstracting them into three key routes: Highway, Tunnel, and Bridge.
+<img width="1748" height="1238" alt="image" src="https://github.com/user-attachments/assets/b921019f-3529-4395-8afa-6234368b7ae5" />
+<img width="1756" height="1222" alt="image" src="https://github.com/user-attachments/assets/9522d157-7f25-42c2-83e2-5d0b40b2c0d9" />
     2.  **Network Modeling:** 📉 Built a foundational network model to evaluate annual average traffic flow and congestion levels.
+<img width="1000" height="800" alt="image" src="https://github.com/user-attachments/assets/5091b9a7-e3c8-44ff-9ba2-9f99998a66aa" />
+<img width="1514" height="1218" alt="image" src="https://github.com/user-attachments/assets/afc27de2-a2ee-4c0a-bd10-2d4ba80a5767" />
+
     3.  **Impact Analysis:** 📊 Compared traffic flow and congestion data before and after the bridge collapse. The results showed that the collapse reduced the bridge's traffic to zero, while traffic on the highway and tunnel routes increased significantly, with a corresponding rise in congestion.
+<img width="374" height="226" alt="image" src="https://github.com/user-attachments/assets/dc0a3af0-bc4c-4fd1-94ce-061a1e37c26e" />
+
 
 ### 3️⃣ Task 3: Bus System Evaluation Model
 
@@ -38,6 +48,7 @@ The project's workflow is divided into four core tasks:
     2.  **Data Visualization:** 🗺️ Processed and visualized the bus network data.
     3.  **Accessibility Analysis:** 🚶‍♂️ Used Dijkstra's algorithm to analyze network reachability.
     4.  **Findings:** 💡 The study found that network accessibility peaked when the bus stop coverage radius was 150 meters, achieving a 28.0% coverage rate at this radius.
+
 
 ### 4️⃣ Task 4: Transport Network Optimization Strategy
 
@@ -49,7 +60,8 @@ The project's workflow is divided into four core tasks:
         * **Network Density** increased by 11.11%
         * **Average Degree** increased by 4.0%
         * **Clustering Coefficient** increased by 9.37%
-
+<img width="1000" height="594" alt="image" src="https://github.com/user-attachments/assets/14a10e03-5251-4153-8a9f-5558ea8f85f1" />
+<img width="386" height="87" alt="image" src="https://github.com/user-attachments/assets/12072cb1-a756-41e7-92a9-cd025201b4ba" />
 ---
 
 ## 📈 Key Models & Formulas
