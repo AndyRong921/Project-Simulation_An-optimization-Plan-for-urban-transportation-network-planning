@@ -20,8 +20,9 @@ The project's workflow is divided into four core tasks:
     3.  **Node Filtering:** 🔎 Applied a comprehensive formula to identify and select the 20 most important traffic nodes.
 <table>
   <tr>
-    <td align="center"><em>Fig 2: Flow chart of our work</em></td>
-    <td align="center"><em>Fig 4: Top 20 Nodes by PageRank</em></td>
+    <td align="center"><em>Fig 1: The condition of a bridge or tunnel
+around a collapsed bridg</em></td>
+    <td align="center"><em>Fig 2: Figure of all nodes after cleaning</em></td>
   </tr>
   <tr>
     <td><img width="400" alt="Flow chart of project work" src="https://github.com/user-attachments/assets/784f83e3-08b1-4d26-939d-306968f54438" /></td>
@@ -36,8 +37,8 @@ The project's workflow is divided into four core tasks:
     1.  **Path Abstraction:** 🛣️ Used the K-means algorithm to cluster qualifying nodes into three groups, abstracting them into three key routes: Highway, Tunnel, and Bridge.
 <table>
   <tr>
-    <td align="center"><em>Fig 5: Surrounding Tunnels/Bridges</em></td>
-    <td align="center"><em>Fig 6: K-Means Cluster Analysis</em></td>
+    <td align="center"><em>Fig 3: Transportation network Visualization (Overall layout)</em></td>
+    <td align="center"><em>Fig 4: Traffic network Visualization (Local layout)</em></td>
   </tr>
   <tr>
     <td><img width="400" alt="The condition of a bridge or tunnel around a collapsed bridge" src="https://github.com/user-attachments/assets/9522d157-7f25-42c2-83e2-5d0b40b2c0d9" /></td>
@@ -47,8 +48,10 @@ The project's workflow is divided into four core tasks:
     2.  **Network Modeling:** 📉 Built a foundational network model to evaluate annual average traffic flow and congestion levels.
 <table>
   <tr>
-    <td align="center"><em>Fig 4: All Nodes After Cleaning (from PDF)</em></td>
-    <td align="center"><em>Fig 7: Route Diagram for Modeling</em></td>
+    <td align="center"><em>Fig 5: Relation between reachability ω and
+radius r</em></td>
+    <td align="center"><em>Fig 6: Service Area Coverage (Radius
+= 500 meters)</em></td>
   </tr>
   <tr>
     <td><img width="400" alt="Figure of all nodes after cleaning" src="https://github.com/user-attachments/assets/afc27de2-a2ee-4c0a-bd10-2d4ba80a5767" /></td>
@@ -59,7 +62,7 @@ The project's workflow is divided into four core tasks:
 <p align="center">
   <img width="500" alt="Table snippet showing traffic increase" src="https://github.com/user-attachments/assets/dc0a3af0-bc4c-4fd1-94ce-061a1e37c26e" />
   <br>
-  <em>Tables 2 & 3 Snippet: Impact on Traffic Flow and Congestion</em>
+  <em>: Table 1&2: Annual Traffic Flow d_ij Based on K-means++ and ∆T & Congestion level Y_ij Based on K-means++ and δ_ij</em>
 </p>
     
 
@@ -85,12 +88,13 @@ The project's workflow is divided into four core tasks:
 <p align="center">
   <img width="600" alt="Comparison of Network Metrics Before and After Optimization" src="https://github.com/user-attachments/assets/14a10e03-5251-4153-8a9f-5558ea8f85f1" />
   <br>
-  <em>Fig 14: Bar Chart of Network Metric Improvements</em>
+  <em>Fig 7: Comparison of Network Metrics
+Before and After Optimization</em>
 </p>
 <p align="center">
   <img width="450" alt="Table of Metrics Before and After Optimization" src="https://github.com/user-attachments/assets/12072cb1-a756-41e7-92a9-cd025201b4ba" />
   <br>
-  <em>Table 4: Detailed Metrics Before and After Optimization</em>
+  <em>Table 3: Metrics Before and After Optimization</em>
 </p>
 
 ---
