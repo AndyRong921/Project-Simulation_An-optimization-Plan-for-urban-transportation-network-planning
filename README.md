@@ -2,7 +2,8 @@
 
 This project presents a comprehensive evaluation and optimization model for the transportation system in Baltimore, USA. Leveraging graph theory, this study establishes a network model and proposes a specific model for the bus network to address challenges posed by the city's transportation infrastructure, particularly following the collapse of the Francis Scott Key Bridge.
 
-![Uploading image.png…]()
+<img width="4144" height="2761" alt="image" src="https://github.com/user-attachments/assets/d936cf9e-cd24-4b1e-9963-a808140f971d" />
+
 
 
 
