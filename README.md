@@ -1,1 +1,1 @@
-# 2025_MCM-ICM_Problem-D_Our-Group-Solutions
+
