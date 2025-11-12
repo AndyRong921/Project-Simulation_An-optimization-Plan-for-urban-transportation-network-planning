@@ -12,6 +12,14 @@ This project presents a comprehensive evaluation and optimization model for the 
 
 The project's workflow is divided into four core tasks:
 
+# 🗺️ Regulating the Traffic of Future: An Applicable Evaluation and Optimization Model for Baltimore 🚗
+
+This project presents a comprehensive evaluation and optimization model for the transportation system in Baltimore, USA. Leveraging graph theory, this study establishes a network model and proposes a specific model for the bus network to address challenges posed by the city's transportation infrastructure, particularly following the collapse of the Francis Scott Key Bridge.
+
+## 🛠️ Project Methodology
+
+The project's workflow is divided into four core tasks:
+
 ### 1️⃣ Task 1: Data Preprocessing & Key Node Identification
 
 * **Objective:** 🎯 To filter and identify the most critical nodes within the transportation network from raw data to prepare for modeling.
@@ -21,10 +29,16 @@ The project's workflow is divided into four core tasks:
         * **Node Degree:** Represents the connectivity of a node.
         * **Average Neighbor's Distance:** Represents the operational efficiency of a node.
     3.  **Node Filtering:** 🔎 Applied a comprehensive formula to identify and select the 20 most important traffic nodes.
-<img width="1000" height="801" alt="image" src="https://github.com/user-attachments/assets/e9175f95-65e6-4dd5-8f95-59b96e1597e5" />
-<img width="1268" height="690" alt="image" src="https://github.com/user-attachments/assets/784f83e3-08b1-4d26-939d-306968f54438" />
-
-
+<table>
+  <tr>
+    <td align="center"><em>Fig 2: Flow chart of our work</em></td>
+    <td align="center"><em>Fig 4: Top 20 Nodes by PageRank</em></td>
+  </tr>
+  <tr>
+    <td><img width="400" alt="Flow chart of project work" src="https://github.com/user-attachments/assets/784f83e3-08b1-4d26-939d-306968f54438" /></td>
+    <td><img width="400" alt="Map showing top 20 nodes" src="https://github.com/user-attachments/assets/e9175f95-65e6-4dd5-8f95-59b96e1597e5" /></td>
+  </tr>
+</table>
 # 🗺️ Regulating the Traffic of Future: An Applicable Evaluation and Optimization Model for Baltimore 🚗
 
 This project presents a comprehensive evaluation and optimization model for the transportation system in Baltimore, USA. Leveraging graph theory, this study establishes a network model and proposes a specific model for the bus network to address challenges posed by the city's transportation infrastructure, particularly following the collapse of the Francis Scott Key Bridge.
