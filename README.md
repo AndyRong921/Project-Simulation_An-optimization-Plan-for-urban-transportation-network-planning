@@ -1,121 +1,101 @@
-Baltimore Transportation Network Evaluation and Optimization Project
+# 🗺️ Regulating the Traffic of Future: An Applicable Evaluation and Optimization Model for Baltimore 🚗
 
-🚀 Project Introduction
+This project presents a comprehensive evaluation and optimization model for the transportation system in Baltimore, USA. Leveraging graph theory, this study establishes a network model and proposes a specific model for the bus network to address challenges posed by the city's transportation infrastructure, particularly following the collapse of the Francis Scott Key Bridge.
 
-This project aims to conduct a comprehensive evaluation and analysis of the transportation infrastructure in Baltimore, USA.
+## 🛠️ Project Methodology
 
-Based on Graph Theory and Network Models, we performed a thorough assessment of Baltimore's transportation system. We specifically analyzed the impact of the Francis Scott Key Bridge collapse and proposed a comprehensive improvement strategy that includes both bridge reconstruction and bus network optimization.
+The project's workflow is divided into four core tasks:
 
-This repository contains our complete analysis methodology, core mathematical models, and key implementation code for this task.
+### 1️⃣ Task 1: Data Preprocessing & Key Node Identification
 
-💡 Project Execution Strategy and Analysis
+* **Objective:** 🎯 To filter and identify the most critical nodes within the transportation network from raw data to prepare for modeling.
+* **Method:**
+    1.  **Data Cleaning:** 🧹 Processed and cleaned an initial dataset of over 220,000 traffic nodes.
+    2.  **Metric Establishment:** 📏 Developed two key evaluation metrics:
+        * **Node Degree:** Represents the connectivity of a node.
+        * **Average Neighbor's Distance:** Represents the operational efficiency of a node.
+    3.  **Node Filtering:** 🔎 Applied a comprehensive formula to identify and select the 20 most important traffic nodes.
 
-Our overall solution follows a four-stage process: "Data First - Assess Current State - Specific Analysis - Comprehensive Optimization".
+### 2️⃣ Task 2: Road Network Modeling (Bridge Collapse Impact)
 
-1. Phase 1: Data Preprocessing and Key Node Identification
+* **Objective:** 💥 To assess the impact of the Key Bridge collapse on Baltimore's road traffic network.
+* **Method:**
+    1.  **Path Abstraction:** 🛣️ Used the K-means algorithm to cluster qualifying nodes into three groups, abstracting them into three key routes: Highway, Tunnel, and Bridge.
+    2.  **Network Modeling:** 📉 Built a foundational network model to evaluate annual average traffic flow and congestion levels.
+    3.  **Impact Analysis:** 📊 Compared traffic flow and congestion data before and after the bridge collapse. The results showed that the collapse reduced the bridge's traffic to zero, while traffic on the highway and tunnel routes increased significantly, with a corresponding rise in congestion.
 
-Faced with a massive amount of raw data, we first performed data cleaning and preprocessing.
+### 3️⃣ Task 3: Bus System Evaluation Model
 
-Metric Establishment: To filter the core hubs of Baltimore's transportation network from over 50,000 nodes, we proposed two key evaluation metrics:
+* **Objective:** 🚌 To evaluate the performance of Baltimore's public bus network.
+* **Method:**
+    1.  **Model Dimensions:** 📐 Established an evaluation model based on two key dimensions: **Accessibility** and **Coverage**.
+    2.  **Data Visualization:** 🗺️ Processed and visualized the bus network data.
+    3.  **Accessibility Analysis:** 🚶‍♂️ Used Dijkstra's algorithm to analyze network reachability.
+    4.  **Findings:** 💡 The study found that network accessibility peaked when the bus stop coverage radius was 150 meters, achieving a 28.0% coverage rate at this radius.
 
-Node Degree: Represents the node's connectivity.
+### 4️⃣ Task 4: Transport Network Optimization Strategy
 
-Average Neighbor's Distance: Represents the node's transit efficiency.
+* **Objective:** 🚀 To propose a comprehensive transportation improvement plan based on the preceding analyses.
+* **Method:**
+    1.  **Strategy:** ✨ Adopted a combined "Key Bridge Reconstruction + Bus Network System Optimization" strategy.
+    2.  **Optimization Actions:** 🚉 Optimized the bus network by adding new bus stops at key nodes, such as airports and train stations.
+    3.  **Effectiveness Evaluation:** ✅ The optimization resulted in improvements across three key network metrics:
+        * **Network Density** increased by 11.11%
+        * **Average Degree** increased by 4.0%
+        * **Clustering Coefficient** increased by 9.37%
 
-Node Filtering: Using our defined comprehensive weighting formula, we successfully identified the top 20 most critical transportation hubs (Top 20 Important Nodes), laying the foundation for subsequent macro-level network modeling.
+---
 
-2. Phase 2: Bridge Collapse Impact Analysis
+## 📈 Key Models & Formulas
 
-We constructed a Road Traffic Flow Model to quantify the impact of the bridge collapse.
+### Road Network (Task 2)
 
-Model Abstraction: We used the K-means algorithm to cluster the selected key nodes into three groups, abstracting them into three key routes: Highway, Tunnel, and Bridge.
+* **Congestion Level ($Y_{ij}$):** Measures the ratio of actual traffic flow ($d_{ij}$) to the maximum capacity ($SM_{ij}$).
+    $$
+    Y_{ij} = \frac{d_{ij}}{SM_{ij}}
+    $$
+* **Collapse Impact Index ($\delta$):** Quantifies the change in minimum congestion ($MIN_1$ before, $MIN_2$ after) to evaluate the severity of the bridge collapse.
+    $$
+    \delta = \frac{|MIN_1 - MIN_2|}{MIN_1}
+    $$
 
-Impact Assessment: We defined the Congestion Level ($Y_{ij} = d_{ij} / SM_{ij}$, i.e., actual flow / max capacity) as the core metric.
+### Bus System (Task 3)
 
-Model Solution: By comparing data before and after the bridge collapse, we found:
+* **Bus Stop Coverage ($f$):** Calculates the total circular coverage area ($n \cdot \pi r^2$) as a fraction of the total shortest path area ($M_{min}$).
+    $$
+    f = \frac{n \cdot \pi r^2}{M_{min}} = \frac{n \cdot \pi r^2}{2a \cdot \min \sum L_{ij}}
+    $$
+* **Coverage-Radius Ratio ($\omega$):** An efficiency metric to evaluate the reasonableness of bus stop placement (coverage per unit of radius).
+    $$
+    \omega = \frac{f}{r}
+    $$
 
-The bridge's own traffic flow (546 units) dropped to 0.
+### Network Optimization (Task 4)
 
-This traffic was forced to divert, causing Highway traffic to increase by 205.23 (units) and Tunnel traffic to increase by 666 (units).
+* **Network Density ($D$):** Measures the ratio of existing edges ($E$) to the total possible edges in a network of $N$ nodes.
+    $$
+    D = \frac{E}{N(N-1)/2}
+    $$
+* **Average Degree ($AD$):** The average number of connections (degree $D_i$) per node in the network.
+    $$
+    AD = \frac{1}{N} \sum_{i=1}^{N} D_i
+    $$
+* **Clustering Coefficient ($C(i)$):** Measures how connected a node's neighbors ($e_i$) are to each other.
+    $$
+    C(i) = \frac{2e_i}{D_i(D_i - 1)}
+    $$
 
-The tunnel's congestion level $\delta_{ij}$ soared by 19.05%, and the highway's also rose by 4.19%, confirming the massive negative impact of the collapse on commuter efficiency.
+---
 
-3. Phase 3: Bus System Special Assessment
+## 👥 Contributors
 
-We established a Bus Traffic System Evaluation Model, focusing on two dimensions: Accessibility and Coverage.
+* **A (Author):** Primarily responsible for modeling; assisted with programming (Matlab, R).
+    * *Undergraduate in Mathematics and Applied Mathematics.*
+* **B:** Primarily responsible for programming (Python, HTML).
+    * *Undergraduate in Software Engineering.*
+* **C:** Primarily responsible for the paper (LaTeX).
+    * *Undergraduate in Information and Computing Science.*
 
-Accessibility Analysis: We used the Dijkstra algorithm to calculate the "shortest path" between any two points in the bus network (converting distance to time based on average bus speed). The results showed that most stops have good accessibility within a 40-minute timeframe.
+## 📜 Usage Statement
 
-Coverage Analysis: We evaluated the coverage efficiency of bus stops by setting different service radii (Radius) and defined a Reachability metric $\omega$ (Reachability $\omega = f/r$, i.e., coverage / radius).
-
-Key Finding: When the coverage radius $r = 150m$, the $\omega$ metric peaked, and the bus network coverage reached 28.0%. This provided crucial data for our subsequent station layout optimization.
-
-4. Phase 4: Comprehensive Optimization Strategy
-
-Based on the analysis from the previous models, we proposed a combined optimization strategy: "Key Bridge Reconstruction + Bus Network System Optimization".
-
-Bus Optimization Algorithm: We didn't just add more stops; we performed precise optimization using algorithms:
-
-Prioritized connecting low-degree nodes to improve network connectivity.
-
-Controlled walking connections by setting a walking distance threshold (0.0045).
-
-Limited cross-connections between bus lines (max 1) to avoid system over-complexity.
-
-Performance Evaluation: After optimization, our bus network showed significant improvements in three key graph theory metrics:
-
-Network Density: Increased by 11.11%
-
-Average Degree: Increased by 4.0%
-
-Clustering Coefficient: Increased by 9.37%
-
-This proves that our optimization strategy can effectively enhance the robustness and efficiency of Baltimore's bus network.
-
-💻 Code Implementation
-
-The code in this repository is mainly used for data processing, K-means clustering, Dijkstra's shortest path algorithm, and bus network optimization simulation as described in the models above.
-
-Runtime Environment
-
-Python 3.x
-
-MATLAB (for some model calculations)
-
-[Main dependencies, e.g., pandas, numpy, scikit-learn, networkx, matplotlib]
-
-# Install main dependencies
-pip install -r requirements.txt
-
-
-Code Structure
-
-.
-├── /paper/                 # Contains related analysis documents or reports
-├── /code/                  # Contains all implementation code
-│   ├── task1_preprocessing.py  # Phase 1: Data preprocessing and node filtering
-│   ├── task2_bridge_impact.py  # Phase 2: K-means and bridge impact analysis
-│   ├── task3_bus_evaluation.py # Phase 3: Dijkstra and bus accessibility
-│   └── task4_optimization.py   # Phase 4: Bus network optimization algorithm
-├── /data/                  # Contains (anonymized) raw or processed data
-├── README.md               # The repository documentation
-└── requirements.txt        # Python dependency packages
-
-
-(Please note: The code file structure above is an example; please modify it according to your actual files)
-
-👥 Project Contributors
-
-a: [Role, e.g., Model construction, Algorithm implementation]
-
-b: [Role, e.g., Data analysis, Report writing]
-
-c: [Role, e.g., Data preprocessing, Code validation]
-
-📜 Disclaimer
-
-The results of this project are intended for academic exchange and technical sharing purposes only.
-
-The solution may have limitations, and the models and code are provided for reference only. We welcome discussion and corrections.
-
-If you find this project helpful, please give it a ⭐️ Star!
+This document provides an overview of the research content from this project. All models, data, and conclusions are derived from the original study. This document is intended for academic exchange and project demonstration purposes only. For citation, please refer to the original research report.
