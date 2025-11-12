@@ -3,7 +3,16 @@
 This project presents a comprehensive evaluation and optimization model for the transportation system in Baltimore, USA. Leveraging graph theory, this study establishes a network model and proposes a specific model for the bus network to address challenges posed by the city's transportation infrastructure, particularly following the collapse of the Francis Scott Key Bridge.
 <img width="4144" height="2761" alt="image" src="https://github.com/user-attachments/assets/c25f6e4f-bb7a-4941-b44b-3df5d3eb5283" />
 
+## 🌐 interactive bus map (website)
 
+We have also developed an interactive website for visualizing the changes in the density of people flow around bus stops.
+
+** Access Method: **
+1. Download the file named 'bus_map_with_legend.html' from this repository.
+2. On your computer, open this file with any modern browser (such as Chrome, Firefox, Safari).
+3. It can be viewed and interacted with.
+
+---
 
 ## 🛠️ Project Methodology
 
